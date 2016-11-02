@@ -433,21 +433,6 @@ body {
   line-height: 1.5;
 }
 
-#bg {
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-  
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-  
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 .container {
   margin: 0 auto;
   max-width: 940px; 
@@ -456,6 +441,9 @@ body {
 
 #main-content {
   text-align: center;
+  height: 700px;
+  background: url(../images/power_lines.jpg) no-repeat center center;
+  background-size: cover;
 }
 
 #main-content .container {
@@ -484,13 +472,18 @@ body {
   text-transform: uppercase;
 }
 
-#main-content p {
+#footer {
+  text-align: center;
+}
+
+#footer .container {
+  position: relative;
+}
+
+#footer p {
   font-size: 12px;
-  margin-top: 160px;
-  margin-bottom: 60px;
-  color: white;
-  margin-left: 140px;
-  margin-right: 140px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .button {
@@ -531,11 +524,16 @@ body {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   #main-content h1 {
     font-size: 40px;
     line-height: 50px;
   }
+  #main-content h2 {
+    font-size: 12px;
+    margin-left: 0px;
+    margin-right: g0px;
+  } 
 }
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) { }
@@ -553,9 +551,6 @@ body {
   }
   header h2 {
     font-size: 30px;
-  }
-  #main-content {
-    width: 490px;
   }
   #main-content h1:before,
   #main-content h2:before,
