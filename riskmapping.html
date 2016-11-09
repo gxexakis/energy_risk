@@ -51,7 +51,7 @@
     mapboxgl.accessToken = 'pk.eyJ1IjoiZ3hleGFraXMiLCJhIjoiY2l1cTF0ejYyMDAybjJ0bno0eW9xc2xoaCJ9.ZJSNBZU45LFx-dsyS9A_yw';
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/gxexakis/civasjaaj005i2imrhhm4b2e5',
+        style: 'mapbox://styles/gxexakis/civaxm9ga005a2ip2wiqadpzi',
         center: [23.801414, 38.292803],
         zoom: 5.8
     });
@@ -146,58 +146,8 @@
                       "circle-opacity": 0.6
                     } 
                 });
-
-                map.setLayoutProperty("place_label_city", 'visibility', 'visible')
-                map.setLayoutProperty("place_label_town", 'visibility', 'visible')
-                map.setLayoutProperty("place_label_village", 'visibility', 'visible')
-                map.setLayoutProperty("place_label_other", 'visibility', 'visible')
-
-
-
-                // Highlight place labels
-
-                // var wasLoaded = false;
-                // map.on('render', function() {
-                //     if (!map.loaded() || wasLoaded) return;
-                //     var label_features = map.queryRenderedFeatures(
-                //         [
-                //           [e.point.x - 165, e.point.y - 165],
-                //           [e.point.x + 165, e.point.y + 165]
-                //         ],{layers:['place_label_city','place_label_town',
-                //         'place_label_village','place_label_other']});
-                //     wasLoaded = true;
-
-                //     if (!label_features.length) {return;}
-
-                //     label_number = label_features.length;
-                //     for (var i = 0; i < label_features.length; i++) {
-                //         var original_layout = label_features[i].layer.layout;
-                //         var original_paint = label_features[i].layer.paint;
-                //         original_paint["text-opacity"] = 1
-
-                //         map.addSource('selectedLabel'+i, {
-                //             "type":"geojson",
-                //             "data": label_features[i].toJSON()
-                //         });
-
-                //         map.addLayer({
-                //             "id": "selectedLabel"+i,
-                //             "type": "symbol",
-                //             "source": "selectedLabel"+i,
-                //             "layout": original_layout,
-                //             "paint": original_paint
-                //         });
-                //     }
-
-                // });
-
-            };
-
-            })
-
-
-
-
+            }
+        });
 
         map.on('mousemove', function (e) {
             var features = map.queryRenderedFeatures(e.point, { layers: ['largest-energy-stations']});
