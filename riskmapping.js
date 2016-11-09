@@ -83,7 +83,7 @@ map.on('load', function() {
             } else if (features[0].properties.type=="wind park") {
 
                document.getElementById('env_list').innerHTML = '\
-                    <li>Landscape scarring and visual impact scarring.</li>\
+                    <li>Landscape scarring and visual impact.</li>\
                     <li>Community Health and Safety - noise, odor, vibration dust creation.</li>\
                     <li>Natural hazards and risks e.g. turbine failure during adverse weather conditions.</li>\
                     <li>Risk to avian populations.</li>\
