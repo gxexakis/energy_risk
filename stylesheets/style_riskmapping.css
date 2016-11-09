@@ -27,20 +27,14 @@ h4 {
 ul,p {
   font-size: 0.85em;
   margin: 10px;
-  text-align: left;
 }
 
 
-
-/**
-* Set rules for how the map overlays
-* (info box and legend) will be displayed
-* on the page. */
 .map-overlay {
   position: absolute;
   top: 0;
   right: 0;
-  width: 300px;
+  width: 350px;
   background: rgba(255, 255, 255, 0.8);
   margin-right: 20px;
   margin-top: 10px;
@@ -48,6 +42,9 @@ ul,p {
   font-family: 'Roboto', sans-serif;
   overflow: auto;
   border-radius: 3px;
+}
+
+#intro {
   text-align: justify;
 }
 
@@ -65,5 +62,5 @@ ul,p {
 
 #references {
   border-top: 1px dotted gray;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
