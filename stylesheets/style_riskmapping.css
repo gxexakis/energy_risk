@@ -29,6 +29,10 @@ ul,p {
   margin: 10px;
 }
 
+ul {
+  	padding-left: 2em;
+}
+
 
 .map-overlay {
   position: absolute;
@@ -62,7 +66,6 @@ ul,p {
 
 #references {
   border-top: 1px dotted gray;
-  font-size: 0.8em;
 }
 
 
